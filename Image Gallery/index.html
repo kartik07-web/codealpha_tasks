@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <h1>Image Gallery</h1>
+
+  <div class="filters">
+    <button data-filter="all">All</button>
+    <button data-filter="nature">Nature</button>
+    <button data-filter="architecture">Architecture</button>
+    <button data-filter="people">People</button>
+  </div>
+
+  <div class="gallery" id="gallery">
+    <div class="image nature"><img src="./premium_photo-1675624628827-e4ec8857f720.avif" alt="imageofjungle" /></div>
+    <div class="image nature"><img src="./premium_photo-1675827055694-010aef2cf08f.avif" alt="waterfall" /></div>
+    <div class="image architecture"><img src="./photo-1479839672679-a46483c0e7c8.avif" alt="white building" /></div>
+    <div class="image architecture"><img src="./premium_photo-1681550097108-187abe10d445.avif" alt="Architecture 2" /></div>
+    <div class="image people"><img src="./istockphoto-986704314-612x612.webp" alt="many peoples gathered" /></div>
+    <div class="image people"><img src="./istockphoto-1434212178-612x612.webp" alt=" lady working" /></div>
+  </div>
+  <div id="lightbox" class="lightbox">
+    <span class="close">&times;</span>
+    <img class="lightbox-img" src="" alt="Preview" />
+    <div class="nav">
+      <span class="prev">&#10094;</span>
+      <span class="next">&#10095;</span>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
